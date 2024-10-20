@@ -1,0 +1,128 @@
+.banner {
+    display:flex;
+    width: 1528px;
+    height: 645px;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    border-radius: 5px;
+    border: 1px;
+    overflow: hidden;
+    
+  }
+  
+  .banner-arrow {
+    border: none;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    font-size: 24px;
+    cursor: pointer;
+    top: 55%;
+    transform: translateY(-50%);
+    padding: 10px;
+    z-index: 3;
+  }
+  
+  .banner-arrow.left {
+    left: 20px;
+  }
+  
+  .banner-arrow.right {
+    right: 20px;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    width: 699px;
+    height: 330px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 24px;
+  }
+  
+  .banner-content h1 {
+    width: 650px;
+    height: 80px;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+  }
+  
+  .banner-content p {
+    width: 536px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    margin-left: 40px;
+  }
+  
+  .start-now-btn {
+    width: 204px;
+    height: 62px;
+    border-radius: 5px;
+    padding: 15px 40px;
+    gap: 10px;
+    background-color: #23a6f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    align-items: center;
+  }
+  
+
+  .carousel-indicators {
+    width: 1027px;
+    height: 6px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 1050px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  
+  .indicator {
+    width: 63px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    /* margin-top: -3px;
+    
+    left: 440px; */
+  }
+  
+
+  .indicator.active {
+    opacity: 1;
+    background-color: red;
+  }
+  
+  .indicator:hover {
+    opacity: 0.8;
+  }
+
+
+
+  
