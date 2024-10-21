@@ -5,7 +5,8 @@
    justify-content: space-between;
    padding: 20px;
    font-size: 14px;
-   
+   /* width: 1570px;
+   height: 20px; */
 }
 
 .top-bar-left span, .top-bar-right span{
@@ -34,4 +35,31 @@ font-weight: 700px;
     color: white;
     margin-left: 10px;
     text-decoration: none;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-bar-left, .top-bar-right {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-bar-left, .top-bar-right {
+        margin: 10px 0;
+    }
 }

@@ -7,7 +7,7 @@ const TopBar = () => {
       <div className="top-bar-left">
         <i className="bi bi-telephone"></i>
         <span>(225) 555-0118</span>
-        <i className="bi bi-envilope"></i>
+        <i className="bi bi-envelope"></i>
         <span>michelle.rivera@example.com</span>
       </div>
       <div className="top-bar-middle">

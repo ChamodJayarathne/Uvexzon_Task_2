@@ -1,23 +1,53 @@
-.banner{
+ .banner{
     margin-top: 50px;
     margin-bottom: 55px;
-    width: 1450px;
-    height: 700px;
+    width: 1330px;
+    height: 622px;
     margin-left: 59px;
     border-radius: 30px;
-    background: url('../assets/img4.png') no-repeat right center;
-    background-size: cover;
     align-items:center;
-    position : relative;
     display: flex;
+    background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
+}
+
+.banner-right{
+   width: 697px;
+    height: 619px;
+    margin-left: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.circle_4{
+  width: 450.88px;
+  height: 459.88px;
+  top: 52px;
+  left: 122.98px;
+  border-radius: 50%; 
+  transform: translate(-195px, -60.67px);
+  background-color: white;
+  position: absolute;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.banner-right img{
+  position: absolute;
+width: 699px;
+height: 580px;
+left:-5px;
+transform: translate(-200px, 25.67px);
+top: 15px;;
+bottom: 70px;
+/* background-color: black; */
 }
 
 .banner-left{
     width: 548px;
     height: 316px;
     gap: 30px;
-    margin-left: 180px;
-    position: absolute;
+    margin-left: 110px;
+    position: relative;
     text-align: start;
     flex: 1;
     z-index: 2;
@@ -34,10 +64,12 @@
 
 .banner-left h1{
    font-size: 58px;
-    font-weight: 700;
+   font-weight: 700;
    color: #252B42;
    line-height: 80px;
    letter-spacing: 0.2px;
+   
+  
 }
 
 .banner-left p{
@@ -71,13 +103,13 @@
 .circle_1{
     width: 31.24px;
     height: 31.24px;
-    background-color: #FFFFFF;
+    background-color: white;
     border-radius: 50%; 
     position: absolute;
     top: 313.75x; 
     left: 740.25px; 
     bottom: 235px;
-    transform: translate(700.75px, -6px); 
+    transform: translate(-380.75px, -130px); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,9 +124,21 @@
     position: absolute;
     top: 280.35px;
     right: 56.67px;
-    transform: translate(-500px, 170.67px);
+    transform: translate(110px, -190.67px);
 }
 
+
+
+.circle_5{
+  width: 79.92px;
+  height: 79.92px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 70.35px;
+  right: 62.67;
+  transform: translate(-180px, -71.60px);
+}
 .circle_3{
     width: 15.26px;
     height: 15.26px;
@@ -104,10 +148,112 @@
     top: 313.75x; 
     left: 760.25px; 
     bottom: 390px;
-    transform: translate(690.75px, -15px); 
+    transform: translate(-820.75px, 190px); 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
+@media only screen and (max-width: 1200px) {
+  .banner {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+  }
+
+  .banner-left {
+      width: 50%;
+      margin-left: 50px;
+  }
+
+  .banner-right {
+      margin-left: 0;
+      width: 50%;
+      height: auto;
+  }
+
+  .banner-right img {
+      width: 100%;
+      height: auto;
+      transform: translate(0);
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+  }
+
+  .banner-left {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .banner-right {
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+  }
+
+  .banner-right img {
+      width: 100%;
+      height: auto;
+      transform: translate(0);
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .banner {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      padding: 20px;
+  }
+
+  .banner-left h1 {
+      font-size: 36px;
+      line-height: 48px;
+  }
+
+  .banner-left h2 {
+      font-size: 14px;
+      line-height: 20px;
+  }
+
+  .banner-left p {
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  .banner-right {
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+  }
+
+  .banner-right img {
+      width: 100%;
+      height: auto;
+      transform: translate(0);
+  }
+
+  .shop-now-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+  }
+
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5 {
+      display: none; 
+  }
+}
