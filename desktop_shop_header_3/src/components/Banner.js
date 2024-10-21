@@ -33,6 +33,7 @@ const Banner = () => {
         backgroundImage: `url(${images[currentImage]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        position: "fixed",
       }}
     >
       <button onClick={prevImage} className="banner-arrow left">
